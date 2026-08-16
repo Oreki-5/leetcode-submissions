@@ -1,7 +1,5 @@
 class Solution {
     public int smallestNumber(int n, int t) {
-        int min = Integer.MAX_VALUE;
-        boolean flag = true;
 
         while (true) {
             if (productOfDigits(n) % t == 0) {

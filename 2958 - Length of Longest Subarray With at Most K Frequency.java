@@ -31,17 +31,13 @@ class Solution {
             maxLen = (R - L) > maxLen ? (R - L) : maxLen;
             map.put(nums[R], map.getOrDefault(nums[R], 0) + 1);
             R++;
-            while (map.get(nums[R-1]) > k) {
-
-                if (nums[R-1] == nums[L]) {
-                    map.put(nums[L], map.get(nums[L]) - 1);
-                }
+            while (map.get(nums[R - 1]) > k) {
+                map.put(nums[L], map.get(nums[L]) - 1);
                 if ((L + 1) < R) {
                     L++;
                 }
 
             }
-            
 
         }
         maxLen = (R - L) > maxLen ? (R - L) : maxLen;
