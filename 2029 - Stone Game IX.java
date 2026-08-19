@@ -16,7 +16,6 @@ class Solution {
             }
             return true;
         }
-
         List<Integer> list = new ArrayList<>();
 
         for (Integer i : stones) {
