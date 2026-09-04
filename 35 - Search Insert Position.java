@@ -21,7 +21,7 @@ class Solution {
                 mid = (start + end) / 2;
             }
         }
-        return target > mid ? mid + 1 : (mid < 0 ? 0 : mid);
+        return target > nums[mid] ? mid + 1 : (mid < 0 ? 0 : mid);
 
     }
 }
